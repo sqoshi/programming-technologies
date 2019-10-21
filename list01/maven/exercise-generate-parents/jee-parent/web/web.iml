@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<module version="4" relativePaths="false" type="J2EE_WEB_MODULE"> 
+  <component name="NewModuleRootManager"> 
+    <exclude-output/>  
+    <orderEntry type="inheritedJdk"/>  
+    <!-- output url="file://$$MODULE_DIR$$/${maven.build.dest}"/ -->  
+    <!-- output-test url="file://$$MODULE_DIR$$/${maven.test.dest}"/ -->  
+    <content url="file://$MODULE_DIR$"> 
+      <!-- sourceFolder url="file://$$MODULE_DIR$$/${pom.build.sourceDirectory}" isTestSource="false"/ -->  
+      <!-- sourceFolder url="file://$$MODULE_DIR$$/${pom.build.testSourceDirectory}" isTestSource="true"/ -->  
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false"/>
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true"/>
+      <excludeFolder url="file://$MODULE_DIR$/target"/>
+    </content>  
+    <orderEntry type="sourceFolder" forTests="false"/>  
+    <!-- Next include each dependency:
+      <orderEntry type="module" module-name="${dep.artifactId}"/>
+      <orderEntry type="module-library">
+        <library name="${dep.artifactId}">
+          <CLASSES>
+            <root url="jar://${lib.path}!/"/>
+          </CLASSES>
+          <JAVADOC/>
+          <SOURCES/>
+        </library>
+      </orderEntry>
+     -->  
+    <output url="file://$MODULE_DIR$/target/classes"/>
+    <output-test url="file://$MODULE_DIR$/target/test-classes"/>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/weld/servlet/weld-servlet/1.1.0.Final/weld-servlet-1.1.0.Final.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/hibernate/hibernate-validator/4.0.0.GA/hibernate-validator-4.0.0.GA.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/javax/xml/bind/jaxb-api/2.1/jaxb-api-2.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.3/jaxb-impl-2.1.3.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/weld/arquillian/container/arquillian-weld-ee-embedded-1.1/1.1.0.Final/arquillian-weld-ee-embedded-1.1-1.1.0.Final.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/arquillian/arquillian-spi/1.0.0.Alpha4/arquillian-spi-1.0.0.Alpha4.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/arquillian/arquillian-api/1.0.0.Alpha4/arquillian-api-1.0.0.Alpha4.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.0.0-alpha-11/shrinkwrap-api-1.0.0-alpha-11.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/arquillian/protocol/arquillian-protocol-local/1.0.0.Alpha4/arquillian-protocol-local-1.0.0.Alpha4.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-cdi/1.0.0.Alpha4/arquillian-testenricher-cdi-1.0.0.Alpha4.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-extension-classloader/1.0.0-alpha-11/shrinkwrap-extension-classloader-1.0.0-alpha-11.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/com/sun/faces/jsf-api/2.0.3/jsf-api-2.0.3.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/javax/el/el-api/2.2/el-api-2.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/com/sun/faces/jsf-impl/2.0.3/jsf-impl-2.0.3.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/javax/enterprise/cdi-api/1.0-SP4/cdi-api-1.0-SP4.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/com/sun/jersey/jersey-server/1.4/jersey-server-1.4.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/com/sun/jersey/jersey-core/1.4/jersey-core-1.4.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/asm/asm/3.1/asm-3.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/spec/javax/ejb/jboss-ejb-api_3.1_spec/1.0.0.Final/jboss-ejb-api_3.1_spec-1.0.0.Final.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.0.Beta1/jboss-transaction-api_1.1_spec-1.0.0.Beta1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/javax/xml/jaxrpc-api/1.1/jaxrpc-api-1.1.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/arquillian/arquillian-junit/1.0.0.Alpha4/arquillian-junit-1.0.0.Alpha4.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/arquillian/arquillian-impl-base/1.0.0.Alpha4/arquillian-impl-base-1.0.0.Alpha4.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.0.0-alpha-11/shrinkwrap-impl-base-1.0.0-alpha-11.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.0.0-alpha-11/shrinkwrap-spi-1.0.0-alpha-11.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+  </component>  
+  <component name="ModuleRootManager"/>  
+  <!-- If it's a war project:
+  <component name="WebModuleProperties">
+    <containerElement type="module" name="${dep.artifactId}">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/classes" />
+    </containerElement>
+    <containerElement type="library" level="module" name="${dep.artifactId}">
+      <attribute name="method" value="1" />
+      <attribute name="URI" value="/WEB-INF/lib/${dep.systemPath.name}" />
+    </containerElement>
+    <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/${pom.build.warSourceDirectory}/WEB-INF/web.xml" version="" />
+    <webroots>
+      <root url="file://$MODULE_DIR$/${pom.build.warSourceDirectory}" relative="/" />
+    </webroots>
+  </component>
+  -->  
+  <component name="WebModuleBuildComponent">
+    <setting name="EXPLODED_URL" value="file://$MODULE_DIR$/target/web"/>
+  </component>
+  <component name="WebModuleProperties">
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/weld-servlet-1.1.0.Final.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/weld/servlet/weld-servlet/1.1.0.Final/weld-servlet-1.1.0.Final.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/hibernate-validator-4.0.0.GA.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/hibernate/hibernate-validator/4.0.0.GA/hibernate-validator-4.0.0.GA.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/validation-api-1.0.0.GA.jar"/>
+      <url>jar:///home/piotr/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/slf4j-api-1.5.10.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/jaxb-api-2.1.jar"/>
+      <url>jar:///home/piotr/.m2/repository/javax/xml/bind/jaxb-api/2.1/jaxb-api-2.1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/stax-api-1.0-2.jar"/>
+      <url>jar:///home/piotr/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/activation-1.1.jar"/>
+      <url>jar:///home/piotr/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/jaxb-impl-2.1.3.jar"/>
+      <url>jar:///home/piotr/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.3/jaxb-impl-2.1.3.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/jsr250-api-1.0.jar"/>
+      <url>jar:///home/piotr/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/arquillian-weld-ee-embedded-1.1-1.1.0.Final.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/weld/arquillian/container/arquillian-weld-ee-embedded-1.1/1.1.0.Final/arquillian-weld-ee-embedded-1.1-1.1.0.Final.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/arquillian-spi-1.0.0.Alpha4.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/arquillian/arquillian-spi/1.0.0.Alpha4/arquillian-spi-1.0.0.Alpha4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/arquillian-api-1.0.0.Alpha4.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/arquillian/arquillian-api/1.0.0.Alpha4/arquillian-api-1.0.0.Alpha4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/shrinkwrap-api-1.0.0-alpha-11.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.0.0-alpha-11/shrinkwrap-api-1.0.0-alpha-11.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/arquillian-protocol-local-1.0.0.Alpha4.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/arquillian/protocol/arquillian-protocol-local/1.0.0.Alpha4/arquillian-protocol-local-1.0.0.Alpha4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/arquillian-testenricher-cdi-1.0.0.Alpha4.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/arquillian/testenricher/arquillian-testenricher-cdi/1.0.0.Alpha4/arquillian-testenricher-cdi-1.0.0.Alpha4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/shrinkwrap-extension-classloader-1.0.0-alpha-11.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-extension-classloader/1.0.0-alpha-11/shrinkwrap-extension-classloader-1.0.0-alpha-11.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/jsf-api-2.0.3.jar"/>
+      <url>jar:///home/piotr/.m2/repository/com/sun/faces/jsf-api/2.0.3/jsf-api-2.0.3.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/el-api-2.2.jar"/>
+      <url>jar:///home/piotr/.m2/repository/javax/el/el-api/2.2/el-api-2.2.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/jsf-impl-2.0.3.jar"/>
+      <url>jar:///home/piotr/.m2/repository/com/sun/faces/jsf-impl/2.0.3/jsf-impl-2.0.3.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/cdi-api-1.0-SP4.jar"/>
+      <url>jar:///home/piotr/.m2/repository/javax/enterprise/cdi-api/1.0-SP4/cdi-api-1.0-SP4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/javax.inject-1.jar"/>
+      <url>jar:///home/piotr/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/servlet-api-2.5.jar"/>
+      <url>jar:///home/piotr/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/junit-4.8.1.jar"/>
+      <url>jar:///home/piotr/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/jersey-server-1.4.jar"/>
+      <url>jar:///home/piotr/.m2/repository/com/sun/jersey/jersey-server/1.4/jersey-server-1.4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/jersey-core-1.4.jar"/>
+      <url>jar:///home/piotr/.m2/repository/com/sun/jersey/jersey-core/1.4/jersey-core-1.4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="1"/>
+      <attribute name="URI" value="/WEB-INF/lib/asm-3.1.jar"/>
+      <url>jar:///home/piotr/.m2/repository/asm/asm/3.1/asm-3.1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/jboss-ejb-api_3.1_spec-1.0.0.Final.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/spec/javax/ejb/jboss-ejb-api_3.1_spec/1.0.0.Final/jboss-ejb-api_3.1_spec-1.0.0.Final.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.0.Beta1.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.0.Beta1/jboss-transaction-api_1.1_spec-1.0.0.Beta1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/jaxrpc-api-1.1.jar"/>
+      <url>jar:///home/piotr/.m2/repository/javax/xml/jaxrpc-api/1.1/jaxrpc-api-1.1.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/arquillian-junit-1.0.0.Alpha4.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/arquillian/arquillian-junit/1.0.0.Alpha4/arquillian-junit-1.0.0.Alpha4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/arquillian-impl-base-1.0.0.Alpha4.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/arquillian/arquillian-impl-base/1.0.0.Alpha4/arquillian-impl-base-1.0.0.Alpha4.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/shrinkwrap-impl-base-1.0.0-alpha-11.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.0.0-alpha-11/shrinkwrap-impl-base-1.0.0-alpha-11.jar!/</url>
+    </containerElement>
+    <containerElement type="library" level="module">
+      <attribute name="method" value="0"/>
+      <attribute name="URI" value="/WEB-INF/lib/shrinkwrap-spi-1.0.0-alpha-11.jar"/>
+      <url>jar:///home/piotr/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.0.0-alpha-11/shrinkwrap-spi-1.0.0-alpha-11.jar!/</url>
+    </containerElement>
+    <deploymentDescriptor version="2.3" name="web.xml" optional="false" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml"/>
+    <webroots>
+      <root relative="/" url="file://$MODULE_DIR$/src/main/webapp"/>
+    </webroots>
+  </component>
+</module>
