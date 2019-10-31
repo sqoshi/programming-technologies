@@ -1,39 +1,35 @@
 import java.util.Random;
 
 public class Item {
-    private int quantity;
-    private int stuckValue;
-    private String name;
+    String productName;
+    int productQuantity;
+    int productStuckValue;
 
-
-    public int getQuantity() {
-        return quantity;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public String getName() {
-        return name;
+    public int getProductQuantity() {
+        return productQuantity;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProductQuantity(int productQuantity) {
+        this.productQuantity = productQuantity;
     }
 
-    public int LossStuckValue()
-    {
+    public int getProductStuckValue() {
+        return productStuckValue;
+    }
+
+    public void setProductStuckValue(int productStuckValue) {
+        this.productStuckValue = productStuckValue;
+    }
+    private int LossStuckValue(){
         Random random = new Random();
-        return stuckValue=random.nextInt(100);
-    }
-
-
-    public void setStuckValue(int stuckValue) {
-        this.stuckValue = stuckValue;
-    }
-
-    public int getStuckValue() {
-        return stuckValue;
+                return random.nextInt(100);
     }
 }

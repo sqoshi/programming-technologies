@@ -2,16 +2,21 @@ import java.util.Scanner;
 
 public class Panel {
     public static void main(final String... args) {
-        System.out.println("Welcome in our shop, please input what you want to do");
+        Database database = new Database();
+        checkClient(database);
+    }
+
+    private static void orderMenu(Client client) {
         printMenu();
         int number = new Scanner(System.in).nextInt();
         while (number != 0) {
             switch (number) {
                 case 1:
-                    System.out.println("Making new order");
-                    new Order();
+                    System.out.println("New order");
+                    client.getOrderArrayList().add(new Order());
                     break;
                 case 2:
+                    System.out.println("Print facture");
                     break;
                 case 3:
                     return;
@@ -25,9 +30,72 @@ public class Panel {
 
     private static void printMenu() {
         System.out.println("---------------------------------------------------------");
-        System.out.println("1. Make New Order");
+        System.out.println("1. Make Order");
         System.out.println("2. Print Facture");
+        System.out.println("3. Log Out");
+    }
+
+    private static void printLogSystem() {
+        System.out.println("Are you a new user?");
+        System.out.println("1. Yes");
+        System.out.println("2. No");
         System.out.println("3. Exit");
+    }
+
+    private static void checkClient(Database database) {
+        printLogSystem();
+        Client client = new Client();
+        int number = new Scanner(System.in).nextInt();
+        while (number != 0) {
+            switch (number) {
+                case 1:
+                    client = register(database);
+                    orderMenu(client);
+                    break;
+                case 2:
+                    client = login(database);
+                    orderMenu(client);
+                    break;
+                case 3:
+                    return;
+            }
+            System.out.println(client.getPesel());
+            printLogSystem();
+            number = new Scanner(System.in).nextInt();
+
+        }
+    }
+
+    private static Client login(Database database) {
+        Client client = new Client();
+        System.out.print("Input pesel: ");
+        String pesel = new Scanner(System.in).next();
+        int i = 0;
+        while ((i < database.getClientArrayList().size())) {
+            if (pesel.equals(database.getClientPesel(i))) {
+                client = database.getClient(i);
+                System.out.println("Correct pesel, Yo are logged");
+            } else if (!pesel.equals(database.getClientPesel(i))) {
+                System.out.println("theres no pesel like this in database clients");
+                checkClient(database);
+            }
+            i++;
+        }
+        return client;
+
+
+    }
+
+    private static Client register(Database database) {
+        Client client = new Client();
+        System.out.print("FirstName: ");
+        client.setFirstName(new Scanner(System.in).next());
+        System.out.print("LastName: ");
+        client.setLastName(new Scanner(System.in).next());
+        System.out.print("pesel: ");
+        client.setPesel(new Scanner(System.in).next());
+        database.getClientArrayList().add(client);
+        return client;
     }
 
 }

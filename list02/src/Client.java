@@ -1,9 +1,22 @@
+import java.util.ArrayList;
+
 public class Client {
+    private String pesel;
+    private String firstName;
+    private String lastName;
+    ArrayList<Order> orderArrayList;
 
-    String pesel;
-    String firstName;
-    String lastName;
+    public ArrayList<Order> getOrderArrayList() {
+        return orderArrayList;
+    }
 
+    public void setOrderArrayList(ArrayList<Order> orderArrayList) {
+        this.orderArrayList = orderArrayList;
+    }
+
+    public void addOrder(Order order){
+        orderArrayList.add(order);
+    }
     public String getPesel() {
         return pesel;
     }
