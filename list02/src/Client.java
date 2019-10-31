@@ -1,13 +1,25 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Client {
     private String pesel;
     private String firstName;
     private String lastName;
-    ArrayList<Order> orderArrayList;
+    ArrayList<Order> orderArrayList= new ArrayList<>();
+
 
     public ArrayList<Order> getOrderArrayList() {
         return orderArrayList;
+    }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "pesel='" + pesel + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", orderArrayList=" + orderArrayList.toString() +
+                '}';
     }
 
     public void setOrderArrayList(ArrayList<Order> orderArrayList) {

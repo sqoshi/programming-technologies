@@ -1,9 +1,22 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Panel {
     public static void main(final String... args) {
         Database database = new Database();
         checkClient(database);
+    }
+
+    private static Item specifyItem() {
+        Item item = new Item();
+        System.out.print("Name:");
+        item.setProductName(new Scanner(System.in).next());
+        System.out.print("Qunatity:");
+        item.setProductQuantity(new Scanner(System.in).nextInt());
+        item.setProductStuckValue(item.LossStuckValue());
+        System.out.print("Product Value per Stuck: " + item.productStuckValue + "\n");
+
+        return item;
     }
 
     private static void orderMenu(Client client) {
@@ -13,10 +26,17 @@ public class Panel {
             switch (number) {
                 case 1:
                     System.out.println("New order");
-                    client.getOrderArrayList().add(new Order());
+                    client.orderArrayList.add(new Order(new ArrayList<>()));
+                    System.out.println("how many items you want to add: ");
+                    int x = new Scanner(System.in).nextInt();
+                    while(x>0) {
+                        x--;
+                        client.getOrderArrayList().get(client.getOrderArrayList().size() - 1).itemArrayList.add(specifyItem());
+                    }
                     break;
                 case 2:
                     System.out.println("Print facture");
+                    System.out.println(client.toString());
                     break;
                 case 3:
                     return;

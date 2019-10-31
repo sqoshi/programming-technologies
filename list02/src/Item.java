@@ -28,8 +28,15 @@ public class Item {
     public void setProductStuckValue(int productStuckValue) {
         this.productStuckValue = productStuckValue;
     }
-    private int LossStuckValue(){
+    public int LossStuckValue(){
         Random random = new Random();
                 return random.nextInt(100);
+    }
+
+    @Override
+    public String toString() {
+        return "\nProdcutName: "+getProductName()+", "
+                + "ProductQuantity: "+ getProductQuantity()+", "
+                +"ProductStuckValue: "+getProductStuckValue();
     }
 }
