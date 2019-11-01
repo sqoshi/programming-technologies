@@ -7,19 +7,6 @@ public class Panel {
         checkClient(database);
     }
 
-    private static Item specifyItem() {
-        Item item = new Item();
-        System.out.print("Name:");
-        item.setProductName(new Scanner(System.in).next());
-        System.out.print("Qunatity:");
-        item.setProductQuantity(new Scanner(System.in).nextInt());
-        item.setProductStuckValue(item.LossStuckValue());
-        System.out.print("Product " + item.getProductName() + " Value per Stuck: " + item.getProductStuckValue() + "\n");
-        item.setProductWholeValue(item.getProductStuckValue() * item.getProductQuantity());
-        System.out.println("Product " + item.getProductName() + "Whole Value: " + item.getProductWholeValue() + " \n");
-
-        return item;
-    }
 
     private static void orderMenu(Client client) {
         printMenu();
@@ -28,17 +15,22 @@ public class Panel {
             switch (number) {
                 case 1:
                     System.out.println("New order");
-                    client.orderArrayList.add(new Order(new ArrayList<>()));
-                    System.out.println("how many items you want to add: ");
+                    System.out.println("How many items you want to add: ");
                     int x = new Scanner(System.in).nextInt();
                     while (x > 0) {
+                        client.orderArrayList.add(new Order(new ArrayList<>()));
                         x--;
-                        client.getOrderArrayList().get(client.getOrderArrayList().size() - 1).itemArrayList.add(specifyItem());
+                        client.getOrderArrayList().get(client.getOrderArrayList().size() - 1).getItemArrayList().add(Item.specifyItem());
                     }
                     break;
                 case 2:
                     System.out.println("Print facture");
                     System.out.println(client.toString());
+                    int p = 0;
+                    for (int k = 0; k < client.getOrderArrayList().size(); ++k) {
+                        p += Mathematic.computeOrderCost(client.getOrderArrayList().get(k).getItemArrayList());
+                    }
+                    System.out.println(p);
                     break;
                 case 3:
                     return;

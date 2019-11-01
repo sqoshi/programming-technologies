@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 
 public class Order {
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_RESET = "\u001B[0m";
     ArrayList<Item> itemArrayList = new ArrayList<>();
 
     public Order(ArrayList<Item> itemArrayList) {
@@ -18,6 +20,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return itemArrayList.toString();
+        return ANSI_GREEN+itemArrayList.toString()+ANSI_RESET;
     }
+
 }

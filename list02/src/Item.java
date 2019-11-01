@@ -1,10 +1,11 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Item {
-    String productName;
-    int productQuantity;
-    int productStuckValue;
-    int productWholeValue;
+    private String productName;
+    private int productQuantity;
+    private int productStuckValue;
+    private int productWholeValue;
 
     public int getProductWholeValue() {
         return productWholeValue;
@@ -50,5 +51,18 @@ public class Item {
                 + "ProductStuckValue: " + getProductStuckValue() + ", "
                 + "ProductWholeValue: " + getProductWholeValue();
 
+    }
+    static Item specifyItem() {
+        Item item = new Item();
+        System.out.print("Name:");
+        item.setProductName(new Scanner(System.in).next());
+        System.out.print("Qunatity:");
+        item.setProductQuantity(new Scanner(System.in).nextInt());
+        item.setProductStuckValue(item.LossStuckValue());
+        System.out.print("Product " + item.getProductName() + " Value per Stuck: " + item.getProductStuckValue() + "\n");
+        item.setProductWholeValue(item.getProductStuckValue() * item.getProductQuantity());
+        System.out.println("Product " + item.getProductName() + "Whole Value: " + item.getProductWholeValue() + " \n");
+
+        return item;
     }
 }
