@@ -14,7 +14,9 @@ public class Panel {
         System.out.print("Qunatity:");
         item.setProductQuantity(new Scanner(System.in).nextInt());
         item.setProductStuckValue(item.LossStuckValue());
-        System.out.print("Product Value per Stuck: " + item.productStuckValue + "\n");
+        System.out.print("Product " + item.getProductName() + " Value per Stuck: " + item.getProductStuckValue() + "\n");
+        item.setProductWholeValue(item.getProductStuckValue() * item.getProductQuantity());
+        System.out.println("Product " + item.getProductName() + "Whole Value: " + item.getProductWholeValue() + " \n");
 
         return item;
     }
@@ -29,7 +31,7 @@ public class Panel {
                     client.orderArrayList.add(new Order(new ArrayList<>()));
                     System.out.println("how many items you want to add: ");
                     int x = new Scanner(System.in).nextInt();
-                    while(x>0) {
+                    while (x > 0) {
                         x--;
                         client.getOrderArrayList().get(client.getOrderArrayList().size() - 1).itemArrayList.add(specifyItem());
                     }
@@ -41,6 +43,7 @@ public class Panel {
                 case 3:
                     return;
                 default:
+                    break;
 
             }
             printMenu();
@@ -78,6 +81,7 @@ public class Panel {
                     break;
                 case 3:
                     return;
+                default:
             }
             System.out.println(client.getPesel());
             printLogSystem();
@@ -95,9 +99,9 @@ public class Panel {
             if (pesel.equals(database.getClientPesel(i))) {
                 client = database.getClient(i);
                 System.out.println("Correct pesel, Yo are logged");
-            } else if (!pesel.equals(database.getClientPesel(i))) {
+            } else if (!client.equals(database.getClient(i))) {
                 System.out.println("theres no pesel like this in database clients");
-                checkClient(database);
+                break;
             }
             i++;
         }
@@ -117,5 +121,4 @@ public class Panel {
         database.getClientArrayList().add(client);
         return client;
     }
-
 }

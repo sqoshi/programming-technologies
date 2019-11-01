@@ -1,11 +1,10 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Client {
     private String pesel;
     private String firstName;
     private String lastName;
-    ArrayList<Order> orderArrayList= new ArrayList<>();
+    ArrayList<Order> orderArrayList = new ArrayList<>();
 
 
     public ArrayList<Order> getOrderArrayList() {
@@ -26,9 +25,10 @@ public class Client {
         this.orderArrayList = orderArrayList;
     }
 
-    public void addOrder(Order order){
+    public void addOrder(Order order) {
         orderArrayList.add(order);
     }
+
     public String getPesel() {
         return pesel;
     }

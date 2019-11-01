@@ -4,6 +4,15 @@ public class Item {
     String productName;
     int productQuantity;
     int productStuckValue;
+    int productWholeValue;
+
+    public int getProductWholeValue() {
+        return productWholeValue;
+    }
+
+    public void setProductWholeValue(int productWholeValue) {
+        this.productWholeValue = productWholeValue;
+    }
 
     public String getProductName() {
         return productName;
@@ -28,15 +37,18 @@ public class Item {
     public void setProductStuckValue(int productStuckValue) {
         this.productStuckValue = productStuckValue;
     }
-    public int LossStuckValue(){
+
+    public int LossStuckValue() {
         Random random = new Random();
-                return random.nextInt(100);
+        return random.nextInt(100);
     }
 
     @Override
     public String toString() {
-        return "\nProdcutName: "+getProductName()+", "
-                + "ProductQuantity: "+ getProductQuantity()+", "
-                +"ProductStuckValue: "+getProductStuckValue();
+        return "\nProdcutName: " + getProductName() + ", "
+                + "ProductQuantity: " + getProductQuantity() + ", "
+                + "ProductStuckValue: " + getProductStuckValue() + ", "
+                + "ProductWholeValue: " + getProductWholeValue();
+
     }
 }
