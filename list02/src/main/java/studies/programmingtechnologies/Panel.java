@@ -3,8 +3,6 @@ package studies.programmingtechnologies;
 import static java.lang.System.in;
 import static java.lang.System.out;
 
-import com.sun.org.apache.bcel.internal.classfile.Utility;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -19,7 +17,7 @@ import studies.programmingtechnologies.user.Client;
  * App panel containt login registration, making order.
  * https://coderanch.com/wiki/678613/Don-close-Scanner-tied-System.
  */
-public class Panel extends Utility {
+public class Panel {
   /**
    * creating new client database and checkingClient .
    * @param args not needed

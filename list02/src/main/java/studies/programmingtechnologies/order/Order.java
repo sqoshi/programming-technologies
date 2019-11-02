@@ -9,18 +9,19 @@ public class Order { //NOPMD
   /**
    * color green.
    */
-  public static final String ANSI_GREEN = "\u001B[32m";
+  private static final String ANSI_GREEN = "\u001B[32m";
   /**
    * color reset.
    */
-  public static final String ANSI_RESET = "\u001B[0m";
+  private static final String ANSI_RESET = "\u001B[0m";
   /**
    * arraylist or items in order.
    */
-  public ArrayList<Item> itemArrayList;//NOPMD
+  private ArrayList<Item> itemArrayList;//NOPMD
 
   /**
    * init item arraylist per order.
+   *
    * @param itemArrayList contain items of order.
    */
   public Order(ArrayList<Item> itemArrayList) { //NOPMD

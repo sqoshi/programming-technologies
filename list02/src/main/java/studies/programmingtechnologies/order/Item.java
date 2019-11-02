@@ -34,11 +34,11 @@ public class Item { //NOPMD
     return productWholeValue;
   }
 
-  private void setProductWholeValue(final int productWholeValue) {
+  public void setProductWholeValue(final int productWholeValue) {
     this.productWholeValue = productWholeValue;
   }
 
-  public String getProductName() {
+  protected String getProductName() {
     return productName;
   }
 
@@ -46,7 +46,7 @@ public class Item { //NOPMD
     this.productName = productName;
   }
 
-  public int getProductQuantity() {
+  private int getProductQuantity() {
     return productQuantity;
   }
 
@@ -54,7 +54,7 @@ public class Item { //NOPMD
     this.productQuantity = productQuantity;
   }
 
-  public int getProductStuckValue() {
+  protected int getProductStuckValue() {
     return productStuckValue;
   }
 
@@ -67,7 +67,7 @@ public class Item { //NOPMD
    *
    * @return return random value 0-100
    */
-  public int lossStuckValue() {
+  protected int lossStuckValue() {
     final Random random = new Random();
     return random.nextInt(100);
   }

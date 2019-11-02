@@ -38,7 +38,7 @@ public class Security extends Utilities {
     }
   }
 
-  private static String peselLengthCheck(final String str) {
+  static String peselLengthCheck(final String str) {
     String s = str; //NOPMD
     Scanner scanner = new Scanner(in); //NOPMD
     while (s.length() != lengthOfPesel) { //NOPMD
@@ -49,7 +49,7 @@ public class Security extends Utilities {
     return s;
   }
 
-  private static String peselOutOfLetters(final String str) {
+   static String peselOutOfLetters(final String str) {
     String s = str;//NOPMD
     Scanner scanner = new Scanner(in); //NOPMD
     for (int i = 0; i < s.length(); ++i) {
@@ -69,6 +69,7 @@ public class Security extends Utilities {
    * @param database arraylist of clients
    * @return good pesel
    */
+
   public static String checkPeselAvailability(final String str, final Database database) {
     Scanner scanner = new Scanner(in); //NOPMD
     for (int i = 0; i < database.getDatabaseSize(); ++i) {
@@ -87,7 +88,7 @@ public class Security extends Utilities {
    * @return right psl
    */
   public static String checkPesel(final String str) {
-    String s = str;//NOPMD
+    String s = str; //NOPMD
     s = peselLengthCheck(s);
     s = peselOutOfLetters(s);
     return s;
