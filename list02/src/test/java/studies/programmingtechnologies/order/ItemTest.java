@@ -7,7 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ItemTest {
   private Item item;
-   ItemTest() {
+
+  ItemTest() {
     item = new Item();
     item.setProductName("TestItem");
     item.setProductQuantity(20);
@@ -18,20 +19,20 @@ class ItemTest {
 
   @Test
   void getProductName() {
-    Assert.assertEquals("TestItem",item.getProductName());
+    Assert.assertEquals("TestItem", item.getProductName());
   }
 
   @Test
   void setProductName() {
     item.setProductName("Charlie");
-    Assert.assertEquals("Charlie",item.getProductName());
+    Assert.assertEquals("Charlie", item.getProductName());
   }
 
 
   @Test
   void lossStuckValue() {
     int x = item.lossStuckValue();
-    Assert.assertNotEquals(item.getProductStuckValue(),x);
+    Assert.assertNotEquals(item.getProductStuckValue(), x);
   }
 
 }

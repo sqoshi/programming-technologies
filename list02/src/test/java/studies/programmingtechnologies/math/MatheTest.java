@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MatheTest {
   private ArrayList<Item> items;
+
   private MatheTest() {
     items = new ArrayList<>();
     Item item1 = new Item();
@@ -30,6 +31,6 @@ class MatheTest {
   @Test
   void computeAllOrderCost() {
     int x = Mathe.computeOrderCost(items);
-    Assert.assertEquals(2200,x);
+    Assert.assertEquals(4400, x);
   }
 }

@@ -83,7 +83,6 @@ public class Item { //NOPMD
 
   /**
    * makes and item to order.
-   *
    * @return ordered item.
    */
   public static Item specifyItem() {

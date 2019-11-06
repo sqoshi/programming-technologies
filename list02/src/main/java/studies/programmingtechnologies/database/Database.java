@@ -45,6 +45,7 @@ public class Database {
 
   /**
    * gets i client from clientaraylist.
+   *
    * @param index index of person
    * @return client
    */

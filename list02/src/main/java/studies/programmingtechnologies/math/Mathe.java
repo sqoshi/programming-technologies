@@ -33,7 +33,8 @@ public class Mathe { //NOPMD
   public static int computeOrderCost(ArrayList<Item> arrayList) { //NOPMD
     int sum = 0; //NOPMD
     for (final Item item : arrayList) {
-      sum = item.getProductWholeValue(); //NOPMD
+      sum += item.getProductWholeValue(); //NOPMD
+      out.print(" Cost After Next Product " + ": " + ANSI_MAGENTA + sum + ANSI_RESET);
     }
     return sum;
   }
@@ -44,12 +45,9 @@ public class Mathe { //NOPMD
    * @param client person with orders in dtabase
    * @return sum of all orders
    */
-  public static int computeAllOrdersCost(final Client client) {
-    int part = 0;
-    for (int k = 0; k < client.getOrderArrayList().size(); ++k) { //NOPMD
-      part += Mathe.computeOrderCost(client.getOrderArrayList().get(k).getItemArrayList()); //NOPMD
-      out.print(" Cost After Next Product " + k + ": " + ANSI_MAGENTA + part + ANSI_RESET);
-    }
+  public static int computeAllOrdersCost(final Client client, final int index) {
+    int part;
+    part = computeOrderCost(client.getOrderArrayList().get(index).getItemArrayList()); //NOPMD
     out.println("\n\t\tTotal Cost: " + ANSI_RED + part + ANSI_RESET);
     return part;
   }

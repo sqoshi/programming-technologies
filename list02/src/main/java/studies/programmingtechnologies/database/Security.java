@@ -9,12 +9,10 @@ import static java.lang.System.out;
 
 import java.util.Scanner;
 
-import javax.swing.text.Utilities;
-
 /**
  * Security Check for database.
  */
-public class Security extends Utilities {
+public class Security { //NOPMD
   /**
    * Polish pesel length.
    */
@@ -38,7 +36,12 @@ public class Security extends Utilities {
     }
   }
 
-  static String peselLengthCheck(final String str) {
+  /**
+   * check if pesel is correct lenth()
+   * @param str pesel
+   * @return correct pesel
+   */
+  public static String peselLengthCheck(final String str) {
     String s = str; //NOPMD
     Scanner scanner = new Scanner(in); //NOPMD
     while (s.length() != lengthOfPesel) { //NOPMD
@@ -49,7 +52,12 @@ public class Security extends Utilities {
     return s;
   }
 
-   static String peselOutOfLetters(final String str) {
+  /**
+   * check if pesel is out of letter -cahrs.
+   * @param str pesel
+   * @return pesel but checking the lenth for sure
+   */
+   public static String peselOutOfLetters(final String str) {
     String s = str;//NOPMD
     Scanner scanner = new Scanner(in); //NOPMD
     for (int i = 0; i < s.length(); ++i) {
@@ -69,7 +77,6 @@ public class Security extends Utilities {
    * @param database arraylist of clients
    * @return good pesel
    */
-
   public static String checkPeselAvailability(final String str, final Database database) {
     Scanner scanner = new Scanner(in); //NOPMD
     for (int i = 0; i < database.getDatabaseSize(); ++i) {

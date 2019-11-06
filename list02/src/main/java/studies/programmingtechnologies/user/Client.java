@@ -38,15 +38,18 @@ public class Client { //NOPMD
     return orderArrayList;
   }
 
-
-  @Override
-  public String toString() {
+  /**
+   * modified toString metod.
+   * @param index order inex
+   * @return informations about the client order
+   */
+  public String toString(final int index) {
     return ANSI_YELLOW + "Client{"
             + "pesel='" + getPesel() + '\''
             + ", firstName='" + getFirstName() + '\''
             + ", lastName='" + getLastName() + '\''
             + ", orderArrayList="
-            + ANSI_RESET + orderArrayList.toString()
+            + ANSI_RESET + orderArrayList.get(index).toString() //NOPMD
             + '}';
   }
 
