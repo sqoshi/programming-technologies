@@ -10,7 +10,7 @@ import eu.jpereira.trainings.designpatterns.creational.builder.xml.XMLReportBody
 import java.util.Iterator;
 
 public class ReportBuilder {
-
+    private int trash;
     private ReportBody reportBody;
     private SaleEntry saleEntry;
 
@@ -18,6 +18,7 @@ public class ReportBuilder {
     public ReportBuilder(ReportBody reportBody, SaleEntry saleEntry) {
         this.reportBody = reportBody;
         this.saleEntry = saleEntry;
+        System.out.println("Surprise");
     }
 
     public SaleEntry setSaleEntry(SaleEntry saleEntry) {
