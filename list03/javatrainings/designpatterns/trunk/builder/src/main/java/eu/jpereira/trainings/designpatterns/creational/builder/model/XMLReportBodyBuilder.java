@@ -42,7 +42,7 @@ public class XMLReportBodyBuilder extends XMLReportBody implements ReportBodyBui
 
     @Override
     public ReportBodyBuilder setCustomerPhone(String phoneNumber) {
-        reportBody.putContent("</name><phone>");
+        reportBody.putContent("<phone>");
         reportBody.putContent(phoneNumber);
         reportBody.putContent("</phone></customer>");
         return null;

@@ -21,7 +21,7 @@ public class JSONReportBodyBuilder extends JSONReportBody implements ReportBodyB
 
     @Override
     public ReportBodyBuilder setCustomerPhone(String phoneNumber) {
-        reportBody.addContent("\",phone:\"");
+        reportBody.addContent(",phone:\"");
         reportBody.addContent(phoneNumber);
         reportBody.addContent("\"}");
         return this;
@@ -35,6 +35,11 @@ public class JSONReportBodyBuilder extends JSONReportBody implements ReportBodyB
 
     @Override
     public ReportBodyBuilder newItem(String name, int quantity, double price) {
+        String body = reportBody.getAsString().toString();
+        if (body.charAt(body.length() - 1) != '[')
+            reportBody.addContent(",");
+
+
         reportBody.addContent("{name:\"");
         reportBody.addContent(name);
         reportBody.addContent("\",quantity:");

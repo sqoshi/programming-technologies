@@ -26,7 +26,6 @@ import eu.jpereira.trainings.designpatterns.creational.builder.xml.XMLReportBody
 
 /**
  * @author jpereira
- *
  */
 public class ReportAssembler {
 
@@ -43,8 +42,16 @@ public class ReportAssembler {
     public Report getReport(ReportBodyBuilder reportBodyBuilder) {
         Report report = new Report();
         reportBodyBuilder.setCustomerName(saleEntry.getCustomer().getName());
+        reportBodyBuilder.setCustomerPhone(saleEntry.getCustomer().getPhone());
         reportBodyBuilder.withItems();
-        Iterator<SoldItem> iterator = saleEntry.getSoldItems().iterator()
+        Iterator<SoldItem> it = saleEntry.getSoldItems().iterator();
+        while (it.hasNext()) {
+            SoldItem item = it.next();
+            reportBodyBuilder.newItem(item.getName(), item.getQuantity(), item.getUnitPrice());
+        }
+        report.setReportBody(reportBodyBuilder.getReportBody());
+        return report;
+
     }
 /*
 		// Algorithms to build the body objects are different
