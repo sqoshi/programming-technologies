@@ -26,5 +26,4 @@ public interface BookstoreFacade {
 	 * @param isbn
 	 */
 	void placeOrder(String customerId, String isbn);
-
 }

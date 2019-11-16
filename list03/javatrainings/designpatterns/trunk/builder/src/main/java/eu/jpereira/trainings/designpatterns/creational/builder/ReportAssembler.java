@@ -32,7 +32,7 @@ public class ReportAssembler {
 	private SaleEntry saleEntry;
 
 	/**
-	 * @param reportDate
+	 * @param
 	 */
 	public void setSaleEntry(SaleEntry saleEntry) {
 		this.saleEntry = saleEntry;
@@ -72,11 +72,11 @@ public class ReportAssembler {
 				if ( it.hasNext() ) {
 					reportBody.addContent(",");
 				}
-
+				
 			}
 			reportBody.addContent("]}");
-
-
+			
+			
 			report.setReportBody(reportBody);
 
 		} else if (type.equals("XML")) {
@@ -86,9 +86,9 @@ public class ReportAssembler {
 			reportBody.putContent("</name><phone>");
 			reportBody.putContent(this.saleEntry.getCustomer().getPhone());
 			reportBody.putContent("</phone></customer>");
-
+			
 			reportBody.putContent("<items>");
-
+			
 			Iterator<SoldItem> it = saleEntry.getSoldItems().iterator();
 			while ( it.hasNext() ) {
 				SoldItem soldEntry= it.next();
@@ -103,16 +103,16 @@ public class ReportAssembler {
 			reportBody.putContent("</items></sale>");
 			report.setReportBody(reportBody);
 		} else if (type.equals("HTML")) {
-
+			
 			HTMLReportBody reportBody = new HTMLReportBody();
 			reportBody.putContent("<span class=\"customerName\">");
 			reportBody.putContent(this.saleEntry.getCustomer().getName());
 			reportBody.putContent("</span><span class=\"customerPhone\">");
 			reportBody.putContent(this.saleEntry.getCustomer().getPhone());
 			reportBody.putContent("</span>");
-
+			
 			reportBody.putContent("<items>");
-
+			
 			Iterator<SoldItem> it = saleEntry.getSoldItems().iterator();
 			while ( it.hasNext() ) {
 				SoldItem soldEntry= it.next();
