@@ -23,11 +23,12 @@ package eu.jpereira.trainings.designpatterns.behavioral.state.appliance.state;
 public enum ApplianceState {
 	
 	
-	//TODO: Comment the following definitions 
-	OFF, ON, STOPPED, STARTED, UNKNOW;
+	//TODO: Comment the following definitions
+
+	//OFF, ON, STOPPED, STARTED, UNKNOW;
 	
 	//TODO: Uncomment the following block of code
-	/*
+
 	
 	
 	OFF {
@@ -55,7 +56,7 @@ public enum ApplianceState {
 			return new UnknowState();
 		}
 	};
-   */
+
 	/**
 	 * Default
 	 * @return

@@ -71,8 +71,7 @@ public class Toaster extends AbstractAppliance {
 		// this.applianceStateBehavior to the return type of the call
 		// Example: this.applianceStateBehavior =
 		// this.applianceStateBehavior.turnOn();
-
-	}
+		this.applianceStateBehavior = this.applianceStateBehavior.turnOn();	}
 
 	/*
 	 * (non-Javadoc)
@@ -83,6 +82,8 @@ public class Toaster extends AbstractAppliance {
 	 */
 	@Override
 	public void turnOff() throws ApplianceCommunicationException {
+		this.applianceStateBehavior = this.applianceStateBehavior.turnOff();
+
 		// TODO: Delegate to the the current ApplianceStateBehavior and set
 		// this.applianceStateBehavior to the return type of the call
 		// Example: this.applianceStateBehavior =
@@ -103,6 +104,7 @@ public class Toaster extends AbstractAppliance {
 		// this.applianceStateBehavior to the return type of the call
 		// Example: this.applianceStateBehavior =
 		// this.applianceStateBehavior.start();
+		this.applianceStateBehavior = this.applianceStateBehavior.start();
 
 	}
 
@@ -115,6 +117,7 @@ public class Toaster extends AbstractAppliance {
 	 */
 	@Override
 	public void stop() throws ApplianceCommunicationException {
+		this.applianceStateBehavior = this.applianceStateBehavior.stop();
 		// TODO: Delegate to the the current ApplianceStateBehavior and set
 		// this.applianceStateBehavior to the return type of the call
 		// Example: this.applianceStateBehavior =
