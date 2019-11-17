@@ -1,17 +1,17 @@
 /**
  * Copyright 2011 Joao Miguel Pereira
- *
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
+ * <p>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 package eu.jpereira.trainings.designpatterns.creational.abstractfactory;
 
@@ -24,72 +24,62 @@ import eu.jpereira.trainings.designpatterns.creational.abstractfactory.xml.XMLRe
 
 public class Report {
 
-	private String reportContent;
-	private ReportBody body;
-	private ReportFooter footer;
-	private ReportHeader header;
-	private String reportType;
-	
-
-	
-	
-	/**
-	 * @param string
-	 */
-	public Report(String string) {
-		this.reportType = string;
-		if ( reportType.equals("JSON")) {
-			//to compose Report with JSON objects
-			this.setBody(new JSONReportBody());
-			this.setFooter(new JSONReportFooter());
-			this.setHeader(new JSONReportHeader());
-		} else {
-			this.setFooter(new XMLReportFooter());
-			this.setHeader(new XMLReportHeader());
-			this.setBody(new XMLReportBody());
-		}
-	}
+    private String reportContent;
+    private ReportBody body;
+    private ReportFooter footer;
+    private ReportHeader header;
+    private String reportType;
 
 
-	public void setBody(ReportBody body) {
-		this.body = body;
-
-	}
-
-	
-	public void setFooter(ReportFooter footer) {
-		this.footer = footer;
-
-	}
-
-	
-	public void setHeader(ReportHeader header) {
-		this.header = header;
-	}
-
-	public void setReportContent(String reportContent) {
-		this.reportContent = reportContent;
-	}
+    /**
+     * @param
+     */
+    public Report(ReportElementFactory factory) {
+		this.setBody(factory.setReportBody());
+		this.setFooter(factory.setReportFooter());
+		this.setHeader(factory.setReportHeader());
+    }
 
 
-	public String getReportContent() {
-		return reportContent;
-	}
+    public void setBody(ReportBody body) {
+        this.body = body;
+
+    }
 
 
-	public ReportBody getBody() {
-		return body;
-	}
+    public void setFooter(ReportFooter footer) {
+        this.footer = footer;
+
+    }
 
 
-	public ReportFooter getFooter() {
-		return footer;
-	}
+    public void setHeader(ReportHeader header) {
+        this.header = header;
+    }
+
+    public void setReportContent(String reportContent) {
+        this.reportContent = reportContent;
+    }
 
 
-	public ReportHeader getHeader() {
-		return header;
-	}
+    public String getReportContent() {
+        return reportContent;
+    }
 
-	
+
+    public ReportBody getBody() {
+        return body;
+    }
+
+
+    public ReportFooter getFooter() {
+        return footer;
+    }
+
+
+    public ReportHeader getHeader() {
+        return header;
+    }
+
+
 }

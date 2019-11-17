@@ -31,7 +31,7 @@ public class ReportTest {
 	@Test
 	public void testCreateJSONReport() {
 
-		Report report = new Report("JSON");
+		Report report = new Report(new JSONReportElementFactory());
 		assertEquals("JSON", report.getBody().getType());
 		assertEquals("JSON", report.getHeader().getType());
 		assertEquals("JSON", report.getFooter().getType());
@@ -41,7 +41,7 @@ public class ReportTest {
 	@Test
 	public void testCreateXMLReport() {
 
-		Report report = new Report("XML");
+		Report report = new Report(new XMLReportElementFactory() );
 		assertEquals("XML", report.getBody().getType());
 		assertEquals("XML", report.getHeader().getType());
 		assertEquals("XML", report.getFooter().getType());
