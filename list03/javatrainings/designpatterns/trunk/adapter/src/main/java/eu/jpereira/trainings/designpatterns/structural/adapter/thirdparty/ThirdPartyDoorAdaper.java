@@ -15,7 +15,7 @@ public class ThirdPartyDoorAdaper extends ThirdPartyDoor implements Door {
         try {
             thirdPartyDoor.unlock(code);
         } catch (CannotUnlockDoorException e) {
-                throw new IncorrectDoorCodeException();
+            throw new IncorrectDoorCodeException();
         }
     }
 
