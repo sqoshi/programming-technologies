@@ -162,9 +162,12 @@
   <component name="EjbViewSettings">
     <EjbView showMembers="false" autoscrollToSource="false" />
   </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="HIDE_WARNINGS" value="false" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
@@ -234,7 +237,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../builder" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../decorator" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -261,6 +264,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookStoreFacadeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="facade" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.jpereira.trainings.designpatterns.structural.facade.facade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eu.jpereira.trainings.designpatterns.structural.facade.facade" />
+      <option name="MAIN_CLASS_NAME" value="eu.jpereira.trainings.designpatterns.structural.facade.facade.BookStoreFacadeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -272,6 +295,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookStoreFacadeTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="StarteamConfiguration">
     <option name="SERVER" value="" />
@@ -309,6 +337,9 @@
       <updated>1573911460402</updated>
       <workItem from="1573911461682" duration="361000" />
       <workItem from="1573912422492" duration="472000" />
+      <workItem from="1573992320076" duration="241000" />
+      <workItem from="1574116387757" duration="473000" />
+      <workItem from="1574116884141" duration="75000" />
     </task>
     <servers />
   </component>
@@ -378,5 +409,10 @@
   </component>
   <component name="WebViewSettings">
     <webview flattenPackages="false" showMembers="false" autoscrollToSource="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/facade$BookStoreFacadeTest.ic" NAME="BookStoreFacadeTest Coverage Results" MODIFIED="1574116447973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>eu.jpereira.trainings.designpatterns.structural.facade.facade.*</FILTER>
+    </SUITE>
   </component>
 </project>

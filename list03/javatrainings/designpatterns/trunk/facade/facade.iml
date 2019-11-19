@@ -44,33 +44,40 @@ under the License.
         </library>
       </orderEntry>
      -->  
-    <output url="file://$MODULE_DIR$/target/classes"/>
-    <output-test url="file://$MODULE_DIR$/target/test-classes"/>
-    <orderEntry type="module-library">
-      <library>
+    <output url="file://$MODULE_DIR$/target/classes"/>  
+    <output-test url="file://$MODULE_DIR$/target/test-classes"/>  
+    <orderEntry type="module-library"> 
+      <library> 
         <CLASSES>
           <root url="jar:///home/piotr/.m2/repository/junit/junit/4.9/junit-4.9.jar!/"/>
         </CLASSES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
+      </library> 
+    </orderEntry>  
+    <orderEntry type="module-library"> 
+      <library> 
         <CLASSES>
           <root url="jar:///home/piotr/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar!/"/>
         </CLASSES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
+      </library> 
+    </orderEntry>  
+    <orderEntry type="module-library"> 
+      <library> 
         <CLASSES>
           <root url="jar:///home/piotr/.m2/repository/org/mockito/mockito-core/1.9.0-rc1/mockito-core-1.9.0-rc1.jar!/"/>
         </CLASSES>
-      </library>
-    </orderEntry>
+      </library> 
+    </orderEntry>  
+    <orderEntry type="module-library"> 
+      <library> 
+        <CLASSES>
+          <root url="jar:///home/piotr/.m2/repository/org/objenesis/objenesis/1.0/objenesis-1.0.jar!/"/>
+        </CLASSES>
+      </library> 
+    </orderEntry>  
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar:///home/piotr/.m2/repository/org/objenesis/objenesis/1.0/objenesis-1.0.jar!/"/>
+          <root url="jar:///home/piotr/.m2/repository/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/"/>
         </CLASSES>
       </library>
     </orderEntry>
