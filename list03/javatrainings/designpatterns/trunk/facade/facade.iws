@@ -237,7 +237,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../decorator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../observer" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -340,6 +340,8 @@
       <workItem from="1573992320076" duration="241000" />
       <workItem from="1574116387757" duration="473000" />
       <workItem from="1574116884141" duration="75000" />
+      <workItem from="1574191832218" duration="1250000" />
+      <workItem from="1574254821853" duration="349000" />
     </task>
     <servers />
   </component>

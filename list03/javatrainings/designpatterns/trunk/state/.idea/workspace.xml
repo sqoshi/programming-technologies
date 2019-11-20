@@ -16,7 +16,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../decorator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../strategy" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -54,6 +54,7 @@
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
     <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,6 +64,12 @@
       <option name="presentableId" value="Default" />
       <updated>1573988292068</updated>
       <workItem from="1573988298432" duration="2092000" />
+      <workItem from="1574188399563" duration="974000" />
+      <workItem from="1574254086658" duration="408000" />
+      <workItem from="1574259630914" duration="164000" />
+      <workItem from="1574261647647" duration="70000" />
+      <workItem from="1574262656355" duration="144000" />
+      <workItem from="1574263189113" duration="59000" />
     </task>
     <servers />
   </component>

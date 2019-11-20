@@ -58,9 +58,6 @@ public class ReportBuilder {
         try {
             this.setSitesContens(this.siteCrawler.crawl().packSiteContens());
         } catch (CannotCrawlException e) {
-            // this singleton instance is in very bad shape... what wiil you do?
-            // I cannot recover from this and this instance will be useless to
-            // clients...
             throw new RuntimeException("Could not load sites:" + e.getMessage());
         }
     }

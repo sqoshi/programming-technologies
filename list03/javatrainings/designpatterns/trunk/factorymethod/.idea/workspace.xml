@@ -23,7 +23,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../abstractfactory" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../builder" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -78,6 +78,7 @@
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
     <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -87,6 +88,10 @@
       <option name="presentableId" value="Default" />
       <updated>1573927657053</updated>
       <workItem from="1573927660623" duration="1593000" />
+      <workItem from="1574174781223" duration="1819000" />
+      <workItem from="1574252902819" duration="565000" />
+      <workItem from="1574260607509" duration="680000" />
+      <workItem from="1574262076937" duration="397000" />
     </task>
     <servers />
   </component>

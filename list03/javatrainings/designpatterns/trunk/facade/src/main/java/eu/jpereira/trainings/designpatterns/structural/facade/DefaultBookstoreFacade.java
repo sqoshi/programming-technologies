@@ -6,7 +6,7 @@ import eu.jpereira.trainings.designpatterns.structural.facade.model.DispatchRece
 import eu.jpereira.trainings.designpatterns.structural.facade.model.Order;
 import eu.jpereira.trainings.designpatterns.structural.facade.service.*;
 
-public class DefaultBookstoreFacade implements BookstoreFacade {
+public  class DefaultBookstoreFacade implements BookstoreFacade {
     private CustomerDBService customerService;
     private BookDBService bookService;
     private OrderingService orderingService;

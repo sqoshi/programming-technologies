@@ -18,7 +18,7 @@ package eu.jpereira.trainings.designpatterns.behavioral.state.appliance.state;
 /**
  * @author jpereira
  *
- *TODO: Find TODOs in this file and complete them
+ * TODO: Find TODOs in this file and complete them
  */
 public class OnState implements ApplianceStateBehavior {
 

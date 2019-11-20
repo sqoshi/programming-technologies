@@ -34,7 +34,6 @@ public abstract class Shape {
         //TODO: Implement
 
         if (CompositeShape.class.isAssignableFrom(this.getClass()))
-
             return (CompositeShape) this;
         else
             return null;

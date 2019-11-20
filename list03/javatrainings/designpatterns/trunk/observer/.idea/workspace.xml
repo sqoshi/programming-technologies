@@ -61,6 +61,7 @@
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
     <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,6 +71,9 @@
       <option name="presentableId" value="Default" />
       <updated>1574161278965</updated>
       <workItem from="1574161281677" duration="856000" />
+      <workItem from="1574193083806" duration="457000" />
+      <workItem from="1574249845843" duration="192000" />
+      <workItem from="1574255171575" duration="467000" />
     </task>
     <servers />
   </component>

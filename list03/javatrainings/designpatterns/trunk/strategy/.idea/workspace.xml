@@ -23,7 +23,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../factorymethod" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -37,7 +37,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CommunicationStrategyTest">
     <configuration name="All in strategy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="strategy" />
       <option name="PACKAGE_NAME" value="" />
@@ -46,8 +46,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommunicationStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="strategy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.jpereira.trainings.designpatterns.behavioral.strategy.appliance.communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eu.jpereira.trainings.designpatterns.behavioral.strategy.appliance.communication" />
+      <option name="MAIN_CLASS_NAME" value="eu.jpereira.trainings.designpatterns.behavioral.strategy.appliance.communication.CommunicationStrategyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommunicationStrategyTest" />
         <item itemvalue="JUnit.All in strategy" />
       </list>
     </recent_temporary>
@@ -65,6 +81,11 @@
       <updated>1574160465294</updated>
       <workItem from="1574160490706" duration="8000" />
       <workItem from="1574162138427" duration="1186000" />
+      <workItem from="1574250039231" duration="1593000" />
+      <workItem from="1574255639645" duration="305000" />
+      <workItem from="1574259913362" duration="326000" />
+      <workItem from="1574261288425" duration="358000" />
+      <workItem from="1574261718781" duration="357000" />
     </task>
     <servers />
   </component>

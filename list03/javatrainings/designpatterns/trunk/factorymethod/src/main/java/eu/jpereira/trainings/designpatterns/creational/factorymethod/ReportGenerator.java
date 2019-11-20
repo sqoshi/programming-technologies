@@ -17,24 +17,25 @@ package eu.jpereira.trainings.designpatterns.creational.factorymethod;
 
 /**
  * The Report Generator will create reports based on a given type
- * @author jpereira
  *
+ * @author jpereira
  */
 public abstract class ReportGenerator {
     protected abstract Report instantiateReport();
 
     /**
      * Generate a new report.
+     *
      * @param data The report data
-     * @param type the type of report
+     * @ type the type of report
      * @return the generated report, or null of type is unknown
      */
-    public Report generateReport(ReportData data, String type) {
+    public Report generateReport(ReportData data/*, String type*/) {
 
         Report generatedReport = instantiateReport();
         generatedReport.generateReport(data);
 
-        return generatedReport;
+           return generatedReport;
 	/*	Report generatedReport = null;
 
 		if (type.equals("JSON")) {

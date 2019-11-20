@@ -16,7 +16,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../state" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../factorymethod" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -71,6 +71,7 @@
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
     <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -80,10 +81,18 @@
       <option name="presentableId" value="Default" />
       <updated>1573985620811</updated>
       <workItem from="1573985649227" duration="2648000" />
+      <workItem from="1574187265211" duration="1132000" />
+      <workItem from="1574253672513" duration="413000" />
+      <workItem from="1574260240737" duration="366000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/composite$ShapeTest.ic" NAME="ShapeTest Coverage Results" MODIFIED="1574177284189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>eu.jpereira.trainings.designpatterns.structural.composite.*</FILTER>
+    </SUITE>
   </component>
 </project>
