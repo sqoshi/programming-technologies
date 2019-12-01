@@ -20,7 +20,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../observer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="ApplianceStateBehaviorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -75,6 +75,8 @@
       <workItem from="1574262656355" duration="144000" />
       <workItem from="1574263189113" duration="59000" />
       <workItem from="1576016352726" duration="920000" />
+      <workItem from="1576161411951" duration="384000" />
+      <workItem from="1576162170460" duration="62000" />
     </task>
     <servers />
   </component>
@@ -86,5 +88,13 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="1240" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1576017270959" />
+    <state x="1018" y="255" width="869" height="596" key="find.popup" timestamp="1576161605260">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="1018" y="255" width="869" height="596" key="find.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1576161605260" />
+    <state x="1115" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1576161736108">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="1115" y="259" width="672" height="678" key="search.everywhere.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1576161736108" />
   </component>
 </project>
