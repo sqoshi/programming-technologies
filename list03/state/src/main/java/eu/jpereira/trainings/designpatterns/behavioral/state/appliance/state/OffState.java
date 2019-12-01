@@ -28,7 +28,6 @@ public class OffState implements ApplianceStateBehavior {
      */
     @Override
     public ApplianceState getState() {
-
         return ApplianceState.OFF;
     }
 
